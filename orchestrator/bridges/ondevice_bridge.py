@@ -36,7 +36,7 @@ class OndeviceBenchmarkBridge:
         output_path = Path(output_dir) / "model.onnx"
         logger.info("Exporting %s to ONNX at %s", checkpoint_path, output_path)
         try:
-            import torch  # type: ignore[import-not-found]
+            import torch  # type: ignore[import-not-found]  # noqa: F401
             # Stub: real export would use torch.onnx.export
             logger.info("ONNX export: torch available, would export to %s", output_path)
             return str(output_path)
