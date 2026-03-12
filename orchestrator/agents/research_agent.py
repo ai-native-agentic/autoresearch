@@ -3,7 +3,7 @@ import logging
 import random
 import re
 import subprocess
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
 
 from ..bridges.agenthub_bridge import AutoresearchAgenthubBridge, ExperimentResult

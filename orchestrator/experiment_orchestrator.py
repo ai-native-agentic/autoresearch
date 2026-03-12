@@ -1,10 +1,10 @@
 """Orchestrates multiple research agents running in parallel."""
 import logging
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
 
-from .agents.research_agent import ResearchAgent, HyperparamSet
+from .agents.research_agent import ResearchAgent
 from .bridges.agenthub_bridge import AutoresearchAgenthubBridge, ExperimentResult
 
 logger = logging.getLogger(__name__)

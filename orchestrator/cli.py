@@ -1,6 +1,5 @@
 """CLI for the autoresearch orchestrator."""
 import logging
-import sys
 
 import click
 
