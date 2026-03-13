@@ -21,8 +21,12 @@ class SelfLearningBridge:
         self._mgr = None
         self._engine = None
         try:
-            from ai_native_self_learning_agents.orchestration.learning.model_version_manager import ModelVersionManager  # type: ignore[import-not-found]
-            from ai_native_self_learning_agents.orchestration.learning.self_learning_engine import SelfLearningEngine  # type: ignore[import-not-found]
+            from ai_native_self_learning_agents.orchestration.learning.model_version_manager import (
+                ModelVersionManager,  # type: ignore[import-not-found]
+            )
+            from ai_native_self_learning_agents.orchestration.learning.self_learning_engine import (
+                SelfLearningEngine,  # type: ignore[import-not-found]
+            )
             self._mgr = ModelVersionManager()
             self._engine = SelfLearningEngine()
             logger.info("self-learning-agents connected")

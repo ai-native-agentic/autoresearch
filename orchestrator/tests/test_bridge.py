@@ -1,10 +1,9 @@
 """Tests for autoresearch orchestrator bridges and agents."""
 from unittest.mock import MagicMock, patch
 
-
+from orchestrator.agents.research_agent import ResearchAgent
 from orchestrator.bridges.agenthub_bridge import AutoresearchAgenthubBridge, ExperimentResult
 from orchestrator.bridges.economic_bridge import EconomicValidationBridge
-from orchestrator.agents.research_agent import ResearchAgent
 from orchestrator.experiment_orchestrator import ExperimentOrchestrator, OrchestratorConfig
 
 
